@@ -1,0 +1,19 @@
+[package]
+name = "raw-brass"
+version = "0.0.1"
+authors = ["IntrepidPig <bennycaguilera@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+winit = "0.18.1"
+cairo-rs = { version = "0.7.1", features = ["xlib", "xcb"] }
+log = "0.4.6"
+x11 = "2.18.1"
+cairo-sys-rs = { version = "0.9.0", features = ["xlib", "xcb"] }
+fern = "0.5.7"
+chrono = "0.4.6"
+lerp = "0.2.0"
+
+[dependencies.xcb]
+version = "0.8.2"
+features = ["randr"]
